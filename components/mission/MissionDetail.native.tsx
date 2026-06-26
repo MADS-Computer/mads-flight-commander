@@ -21,7 +21,7 @@ import type { DroneStatus } from '@/types/drone';
 const STATUS_COLOR: Record<MissionStatus, string> = {
   draft:     '#555566',
   uploaded:  '#ff8c00',
-  active:    '#00d4ff',
+  active:    '#FFD700',
   paused:    '#a020f0',
   completed: '#00e676',
   aborted:   '#ff4444',
@@ -39,7 +39,7 @@ const STATUS_LABEL: Record<MissionStatus, string> = {
 const DRONE_STATUS_COLOR: Record<DroneStatus, string> = {
   idle:      '#666677',
   armed:     '#ff8c00',
-  flying:    '#00d4ff',
+  flying:    '#FFD700',
   returning: '#a020f0',
   error:     '#ff4444',
   offline:   '#333344',
@@ -120,7 +120,7 @@ export default function MissionDetail({ missionId }: Props) {
   if (!mission) {
     return (
       <View style={styles.centered}>
-        <ActivityIndicator color="#00d4ff" />
+        <ActivityIndicator color="#FFD700" />
       </View>
     );
   }
@@ -158,7 +158,7 @@ export default function MissionDetail({ missionId }: Props) {
             <MapboxGL.ShapeSource id="mission-detail-path" shape={pathShape as any}>
               <MapboxGL.LineLayer
                 id="mission-detail-line"
-                style={{ lineColor: '#00d4ff', lineWidth: 2, lineDasharray: [4, 2] }}
+                style={{ lineColor: '#FFD700', lineWidth: 2, lineDasharray: [4, 2] }}
               />
             </MapboxGL.ShapeSource>
           )}
@@ -195,7 +195,7 @@ export default function MissionDetail({ missionId }: Props) {
             )}
             {mission.status === 'uploaded' && (
               <>
-                <ActionButton label="Start Mission" color="#00d4ff" disabled={saving}
+                <ActionButton label="Start Mission" color="#FFD700" disabled={saving}
                   onPress={() => transition('active')} />
                 <ActionButton label="Reset to Draft" color="#555566" disabled={saving}
                   onPress={() => transition('draft')} />
@@ -211,7 +211,7 @@ export default function MissionDetail({ missionId }: Props) {
             )}
             {mission.status === 'paused' && (
               <>
-                <ActionButton label="Resume" color="#00d4ff" disabled={saving}
+                <ActionButton label="Resume" color="#FFD700" disabled={saving}
                   onPress={() => transition('active')} />
                 <ActionButton label="Abort Mission" color="#ff4444" disabled={saving}
                   onPress={() => transition('aborted')} />

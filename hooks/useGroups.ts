@@ -6,7 +6,7 @@ function mapGroup(row: Record<string, unknown>): DroneGroup {
   return {
     id:        row.id as string,
     name:      row.name as string,
-    color:     (row.color as string) || '#00d4ff',
+    color:     (row.color as string) || '#FFD700',
     createdBy: row.created_by as string,
     createdAt: row.created_at as string,
     updatedAt: row.updated_at as string,

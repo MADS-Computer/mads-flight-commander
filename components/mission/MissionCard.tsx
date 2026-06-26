@@ -4,7 +4,7 @@ import type { Mission, MissionStatus } from '@/types/mission';
 const STATUS_COLOR: Record<MissionStatus, string> = {
   draft:     '#555566',
   uploaded:  '#ff8c00',
-  active:    '#00d4ff',
+  active:    '#FFD700',
   paused:    '#a020f0',
   completed: '#00e676',
   aborted:   '#ff4444',

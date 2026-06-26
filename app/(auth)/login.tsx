@@ -255,7 +255,7 @@ const styles = StyleSheet.create({
   logoMads: {
     fontSize:      52,
     fontWeight:    '900',
-    color:         '#00d4ff',
+    color:         '#FFD700',
     letterSpacing: 6,
     lineHeight:    56,
   },
@@ -346,7 +346,7 @@ const styles = StyleSheet.create({
 
   // Submit button
   submitBtn: {
-    backgroundColor: '#00d4ff',
+    backgroundColor: '#FFD700',
     borderRadius:    12,
     paddingVertical: 15,
     alignItems:      'center',
@@ -378,9 +378,9 @@ const styles = StyleSheet.create({
     width:           72,
     height:          72,
     borderRadius:    36,
-    backgroundColor: '#00d4ff18',
+    backgroundColor: '#FFD70018',
     borderWidth:     1,
-    borderColor:     '#00d4ff44',
+    borderColor:     '#FFD70044',
     justifyContent:  'center',
     alignItems:      'center',
     marginBottom:    8,
@@ -399,7 +399,7 @@ const styles = StyleSheet.create({
     lineHeight: 20,
   },
   confirmedEmail: {
-    color:      '#00d4ff',
+    color:      '#FFD700',
     fontSize:   15,
     fontWeight: '600',
     textAlign:  'center',

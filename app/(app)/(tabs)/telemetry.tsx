@@ -56,8 +56,8 @@ export default function TelemetryScreen() {
           <RefreshControl
             refreshing={refreshing}
             onRefresh={onRefresh}
-            tintColor="#00d4ff"
-            colors={['#00d4ff']}
+            tintColor="#FFD700"
+            colors={['#FFD700']}
           />
         }
         // Keep all cards mounted so their Animated flash refs survive scroll
@@ -75,7 +75,7 @@ function SummaryBar({ counts }: { counts: Counts }) {
   return (
     <View style={styles.summary}>
       {counts.error   > 0 && <Pill count={counts.error}   label="Error"   color="#ff4444" />}
-      {counts.flying  > 0 && <Pill count={counts.flying}  label="Flying"  color="#00d4ff" />}
+      {counts.flying  > 0 && <Pill count={counts.flying}  label="Flying"  color="#FFD700" />}
       {counts.armed   > 0 && <Pill count={counts.armed}   label="Armed"   color="#ff8c00" />}
       {counts.offline > 0 && <Pill count={counts.offline} label="Offline" color="#444455" />}
       <Text style={styles.totalText}>{counts.total} drone{counts.total !== 1 ? 's' : ''}</Text>

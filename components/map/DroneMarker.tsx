@@ -11,7 +11,7 @@ export function DroneMarker({ drone }: Props) {
   const statusColors: Record<Drone['status'], string> = {
     idle: '#888',
     armed: '#ff8c00',
-    flying: '#00d4ff',
+    flying: '#FFD700',
     returning: '#a020f0',
     error: '#ff4444',
     offline: '#333',

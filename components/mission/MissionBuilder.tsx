@@ -167,12 +167,12 @@ const styles = StyleSheet.create({
     paddingVertical:   8,
     backgroundColor: SURFACE,
   },
-  droneChipSel:     { borderColor: '#00d4ff88', backgroundColor: '#00d4ff18' },
+  droneChipSel:     { borderColor: '#FFD70088', backgroundColor: '#FFD70018' },
   droneChipText:    { color: '#666677', fontSize: 13 },
-  droneChipTextSel: { color: '#00d4ff', fontWeight: '600' },
+  droneChipTextSel: { color: '#FFD700', fontWeight: '600' },
   emptyText:        { color: '#33334a', fontSize: 13 },
 
-  saveBtn:         { backgroundColor: '#00d4ff', borderRadius: 12, paddingVertical: 14, alignItems: 'center' },
+  saveBtn:         { backgroundColor: '#FFD700', borderRadius: 12, paddingVertical: 14, alignItems: 'center' },
   saveBtnDisabled: { opacity: 0.5 },
   saveBtnText:     { color: '#000', fontSize: 15, fontWeight: '700' },
 });

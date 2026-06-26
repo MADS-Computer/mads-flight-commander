@@ -3,12 +3,9 @@ import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
-import Mapbox from '@rnmapbox/maps';
+import '@/lib/mapbox-init';
 
 SplashScreen.preventAutoHideAsync();
-
-// Public token (pk.*) — set at runtime. Never hardcode; use EXPO_PUBLIC_MAPBOX_TOKEN in .env
-Mapbox.setAccessToken(process.env.EXPO_PUBLIC_MAPBOX_TOKEN ?? '');
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({

@@ -8,7 +8,7 @@ import { BatteryIndicator } from './BatteryIndicator';
 const STATUS_COLOR: Record<DroneStatus, string> = {
   idle:      '#666677',
   armed:     '#ff8c00',
-  flying:    '#00d4ff',
+  flying:    '#FFD700',
   returning: '#a020f0',
   error:     '#ff4444',
   offline:   '#333344',

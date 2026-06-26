@@ -4,7 +4,7 @@ import type { Drone, DroneStatus } from '@/types/drone';
 const STATUS_COLORS: Record<DroneStatus, string> = {
   idle:      '#888888',
   armed:     '#ff8c00',
-  flying:    '#00d4ff',
+  flying:    '#FFD700',
   returning: '#a020f0',
   error:     '#ff4444',
   offline:   '#444444',

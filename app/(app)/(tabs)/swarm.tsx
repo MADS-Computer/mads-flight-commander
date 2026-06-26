@@ -23,14 +23,14 @@ import type { Mission, MissionStatus } from '@/types/mission';
 // ── Constants ─────────────────────────────────────────────────────────────────
 
 const GROUP_COLORS = [
-  '#00d4ff', '#ff8c00', '#00e676', '#a020f0',
-  '#ff4444', '#ffd700', '#ff69b4', '#aaaaaa',
+  '#FFD700', '#ff8c00', '#00e676', '#a020f0',
+  '#ff4444', '#00bfff', '#ff69b4', '#aaaaaa',
 ];
 
 const DRONE_STATUS_COLOR: Record<DroneStatus, string> = {
   idle:      '#666677',
   armed:     '#ff8c00',
-  flying:    '#00d4ff',
+  flying:    '#FFD700',
   returning: '#a020f0',
   error:     '#ff4444',
   offline:   '#333344',
@@ -48,7 +48,7 @@ const DRONE_STATUS_LABEL: Record<DroneStatus, string> = {
 const MISSION_STATUS_COLOR: Record<MissionStatus, string> = {
   draft:     '#555566',
   uploaded:  '#ff8c00',
-  active:    '#00d4ff',
+  active:    '#FFD700',
   paused:    '#a020f0',
   completed: '#00e676',
   aborted:   '#ff4444',
@@ -276,7 +276,7 @@ function GroupCard({ group, drones, mission, isOperator, onEditMembers, onAssign
       {/* Operator controls */}
       {isOperator && (
         <View style={styles.controls}>
-          <ControlButton label="Members"    color="#00d4ff" onPress={onEditMembers} />
+          <ControlButton label="Members"    color="#FFD700" onPress={onEditMembers} />
           <ControlButton label="Mission"    color="#ff8c00" onPress={onAssignMission} />
           <ControlButton label="Delete"     color="#ff4444" onPress={onDelete} />
         </View>
@@ -692,7 +692,7 @@ const styles = StyleSheet.create({
     position:          'absolute',
     bottom:            24,
     right:             24,
-    backgroundColor:   '#00d4ff',
+    backgroundColor:   '#FFD700',
     borderRadius:      24,
     paddingVertical:   12,
     paddingHorizontal: 20,
@@ -778,7 +778,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems:   'center',
   },
-  checkboxChecked: { backgroundColor: '#00d4ff', borderColor: '#00d4ff' },
+  checkboxChecked: { backgroundColor: '#FFD700', borderColor: '#FFD700' },
   checkmark:       { color: '#000000', fontSize: 13, fontWeight: '800', lineHeight: 15 },
   memberInfo:      { flex: 1 },
   memberName:      { color: '#c0c0d8', fontSize: 13, fontWeight: '500' },
@@ -795,7 +795,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: BORDER,
   },
-  missionItemAssigned: { backgroundColor: '#00d4ff0a' },
+  missionItemAssigned: { backgroundColor: '#FFD7000a' },
   missionItemName:     { color: '#d0d0e8', fontSize: 14, fontWeight: '600' },
   missionItemMeta:     { color: '#44445a', fontSize: 11, marginTop: 2 },
   missionItemBadge: {
@@ -805,11 +805,11 @@ const styles = StyleSheet.create({
     paddingVertical:   3,
   },
   missionItemBadgeText: { fontSize: 9, fontWeight: '800', letterSpacing: 0.5 },
-  assignedCheck:        { color: '#00d4ff', fontSize: 16, fontWeight: '700', marginLeft: 2 },
+  assignedCheck:        { color: '#FFD700', fontSize: 16, fontWeight: '700', marginLeft: 2 },
 
   // Save button (shared)
   saveBtn: {
-    backgroundColor: '#00d4ff',
+    backgroundColor: '#FFD700',
     borderRadius:    12,
     paddingVertical: 14,
     alignItems:      'center',
@@ -829,7 +829,7 @@ const styles = StyleSheet.create({
   emptyHint:  { color: '#33334a', fontSize: 13, textAlign: 'center', lineHeight: 20 },
   emptyBtn: {
     marginTop:         8,
-    backgroundColor:   '#00d4ff',
+    backgroundColor:   '#FFD700',
     borderRadius:      20,
     paddingVertical:   10,
     paddingHorizontal: 24,

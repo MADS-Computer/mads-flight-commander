@@ -9,7 +9,7 @@ export default function DroneDetailScreen() {
   if (!drone) {
     return (
       <View style={styles.centered}>
-        <ActivityIndicator color="#00d4ff" />
+        <ActivityIndicator color="#FFD700" />
         <Text style={styles.loadingText}>Loading drone data...</Text>
       </View>
     );
@@ -78,7 +78,7 @@ function Row({ label, value }: { label: string; value: string }) {
 const STATUS_COLORS: Record<string, string> = {
   idle:      '#444444',
   armed:     '#ff8c00',
-  flying:    '#00d4ff',
+  flying:    '#FFD700',
   returning: '#a020f0',
   error:     '#ff4444',
   offline:   '#333333',
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
   statusBadge: { borderRadius: 8, paddingHorizontal: 10, paddingVertical: 4 },
   statusText:  { color: '#fff', fontSize: 11, fontWeight: '700' },
   section:     { backgroundColor: '#1a1a2e', borderRadius: 12, padding: 16, borderWidth: 1, borderColor: '#2a2a4e' },
-  sectionTitle:{ color: '#00d4ff', fontSize: 12, fontWeight: '700', marginBottom: 12, textTransform: 'uppercase', letterSpacing: 1 },
+  sectionTitle:{ color: '#FFD700', fontSize: 12, fontWeight: '700', marginBottom: 12, textTransform: 'uppercase', letterSpacing: 1 },
   row:         { flexDirection: 'row', justifyContent: 'space-between', paddingVertical: 7, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: '#2a2a4e' },
   rowLabel:    { color: '#888', fontSize: 14 },
   rowValue:    { color: '#fff', fontSize: 14, fontWeight: '600' },

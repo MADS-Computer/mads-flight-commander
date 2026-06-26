@@ -11,7 +11,7 @@ const STYLE_URL = 'mapbox://styles/mapbox/dark-v11';
 const STATUS_COLORS: Record<DroneStatus, string> = {
   idle:      '#888888',
   armed:     '#ff8c00',
-  flying:    '#00d4ff',
+  flying:    '#FFD700',
   returning: '#a020f0',
   error:     '#ff4444',
   offline:   '#444444',
@@ -127,7 +127,7 @@ export default function MapScreen() {
       {/* ── HUD: fleet status bar ───────────────────────────────────────── */}
       <View style={styles.hud} pointerEvents="box-none">
         <View style={styles.hudInner}>
-          <HudPill color="#00d4ff" label={`${flyingCount} flying`} />
+          <HudPill color="#FFD700" label={`${flyingCount} flying`} />
           {errorCount > 0 && <HudPill color="#ff4444" label={`${errorCount} error`} />}
           <HudPill color="#555" label={`${drones.length} total`} />
         </View>
@@ -145,7 +145,7 @@ export default function MapScreen() {
       {/* ── Empty state ─────────────────────────────────────────────────── */}
       {mapReady && drones.length === 0 && (
         <View style={styles.emptyOverlay} pointerEvents="none">
-          <ActivityIndicator color="#00d4ff" />
+          <ActivityIndicator color="#FFD700" />
           <Text style={styles.emptyText}>Waiting for drones…</Text>
         </View>
       )}
@@ -230,7 +230,7 @@ const styles = StyleSheet.create({
     alignItems:       'center',
   },
   fitBtnText: {
-    color:      '#00d4ff',
+    color:      '#FFD700',
     fontSize:   22,
     lineHeight: 24,
   },

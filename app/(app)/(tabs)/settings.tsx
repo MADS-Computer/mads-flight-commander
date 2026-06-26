@@ -13,7 +13,7 @@ import { useAuth } from '@/hooks/useAuth';
 import type { Role } from '@/types/auth';
 
 const ROLE_COLOR: Record<Role, string> = {
-  operator: '#00d4ff',
+  operator: '#FFD700',
   observer: '#ff8c00',
 };
 
@@ -55,7 +55,7 @@ export default function SettingsScreen() {
   if (loading) {
     return (
       <View style={styles.centered}>
-        <ActivityIndicator color="#00d4ff" />
+        <ActivityIndicator color="#FFD700" />
       </View>
     );
   }

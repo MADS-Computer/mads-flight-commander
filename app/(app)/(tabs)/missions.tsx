@@ -49,8 +49,8 @@ export default function MissionsScreen() {
           <RefreshControl
             refreshing={refreshing}
             onRefresh={onRefresh}
-            tintColor="#00d4ff"
-            colors={['#00d4ff']}
+            tintColor="#FFD700"
+            colors={['#FFD700']}
           />
         }
       />
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     position:          'absolute',
     bottom:            24,
     right:             24,
-    backgroundColor:   '#00d4ff',
+    backgroundColor:   '#FFD700',
     borderRadius:      24,
     paddingVertical:   12,
     paddingHorizontal: 20,

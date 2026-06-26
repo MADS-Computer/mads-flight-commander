@@ -5,7 +5,7 @@ import { useAuth } from '@/hooks/useAuth';
 
 const HEADER_THEME = {
   headerStyle:      { backgroundColor: '#0a0a0f' },
-  headerTintColor:  '#00d4ff',
+  headerTintColor:  '#FFD700',
   headerTitleStyle: { color: '#ffffff' },
 } as const;
 
@@ -21,7 +21,7 @@ export default function AppLayout() {
   if (loading) {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#0a0a0f' }}>
-        <ActivityIndicator size="large" color="#00d4ff" />
+        <ActivityIndicator size="large" color="#FFD700" />
       </View>
     );
   }

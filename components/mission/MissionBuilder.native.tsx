@@ -410,7 +410,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems:     'center',
   },
-  stepBtnText: { color: '#00d4ff', fontSize: 22, fontWeight: '300', lineHeight: 26 },
+  stepBtnText: { color: '#FFD700', fontSize: 22, fontWeight: '300', lineHeight: 26 },
   altValue:    { color: '#fff', fontSize: 15, fontWeight: '600', minWidth: 50, textAlign: 'center' },
 
   // Drone chips
@@ -425,16 +425,16 @@ const styles = StyleSheet.create({
     backgroundColor: SURFACE,
   },
   droneChipSel: {
-    borderColor:     '#00d4ff88',
-    backgroundColor: '#00d4ff18',
+    borderColor:     '#FFD70088',
+    backgroundColor: '#FFD70018',
   },
   droneChipText:    { color: '#666677', fontSize: 13 },
-  droneChipTextSel: { color: '#00d4ff', fontWeight: '600' },
+  droneChipTextSel: { color: '#FFD700', fontWeight: '600' },
   noDrones: { color: '#33334a', fontSize: 13 },
 
   // Save button
   saveBtn: {
-    backgroundColor: '#00d4ff',
+    backgroundColor: '#FFD700',
     borderRadius:    12,
     paddingVertical: 14,
     alignItems:      'center',

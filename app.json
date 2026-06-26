@@ -33,7 +33,8 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      ["@rnmapbox/maps", { "RNMapboxMapsUseV11": true }]
     ],
     "experiments": {
       "typedRoutes": true

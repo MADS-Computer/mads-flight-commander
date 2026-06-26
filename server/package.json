@@ -1,0 +1,23 @@
+{
+  "name": "mads-flight-commander-bridge",
+  "version": "1.0.0",
+  "description": "MAVLink UDP → socket.io bridge for MADS Flight Commander",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node --esm src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.108.2",
+    "dotenv": "^16.4.5",
+    "node-mavlink": "^2.3.0",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.5.0"
+  },
+  "type": "module"
+}

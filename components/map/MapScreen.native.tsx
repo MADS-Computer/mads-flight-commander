@@ -237,7 +237,7 @@ const styles = StyleSheet.create({
 
   // Centered loading/empty overlay
   emptyOverlay: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     justifyContent: 'center',
     alignItems:     'center',
     gap:            12,

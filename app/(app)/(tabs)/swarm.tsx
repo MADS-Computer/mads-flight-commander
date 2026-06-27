@@ -113,12 +113,12 @@ export default function SwarmScreen() {
   }
 
   async function handleSaveMembers(groupId: string, toAdd: string[], toRemove: string[]) {
-    const ops: Promise<unknown>[] = [];
+    const ops = [];
     if (toAdd.length > 0)
       ops.push(supabase.from('drones').update({ group_id: groupId }).in('id', toAdd));
     if (toRemove.length > 0)
       ops.push(supabase.from('drones').update({ group_id: null }).in('id', toRemove));
-    await Promise.all(ops);
+    await Promise.allSettled(ops);
     setSheet(null);
   }
 

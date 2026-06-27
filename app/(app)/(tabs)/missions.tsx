@@ -4,6 +4,7 @@ import { router } from 'expo-router';
 import { useMissions } from '@/hooks/useMissions';
 import { useAuth } from '@/hooks/useAuth';
 import { MissionCard } from '@/components/mission/MissionCard';
+import { ErrorBoundary } from '@/components/ErrorBoundary';
 import type { MissionStatus } from '@/types/mission';
 
 const STATUS_PRIORITY: Record<MissionStatus, number> = {
@@ -32,6 +33,7 @@ export default function MissionsScreen() {
   }, []);
 
   return (
+    <ErrorBoundary fallbackLabel="Missions failed to load">
     <View style={styles.container}>
       <FlatList
         data={sorted}
@@ -64,6 +66,7 @@ export default function MissionsScreen() {
         </Pressable>
       )}
     </View>
+    </ErrorBoundary>
   );
 }
 
